@@ -88,6 +88,7 @@ img {
 
 .header_icon {
     margin-right: 15px;
+    margin-bottom: -10px;
 }
 
 .header_block_subtitle {
@@ -160,7 +161,7 @@ img {
 }
 
 .main_title {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 64px;
     line-height: 78px;
     color: #FFFFFF;
@@ -194,12 +195,17 @@ img {
 .btn {
     background: linear-gradient(90deg, #EF5726 0%, #C62433 100%);
     border-radius: 50px;
-    padding: 15px 25px;
+    padding: 18px 25px;
     color: #FFFFFF;
-    font-weight: bold;
+    font-weight: 600;
     display: inline-block;
     text-decoration: none;
     transition: .3s ease-in-out;
+    -webkit-box-shadow: 0px 5px 12px 0px rgba(239, 87, 38, 0.5);
+-moz-box-shadow:    0px 5px 12px 0px rgba(239, 87, 38, 0.5);
+box-shadow:         0px 5px 12px 0px rgba(239, 87, 38, 0.5);
+font-size: 14px;
+line-height: 14px;
 
 }
 
@@ -237,24 +243,46 @@ img {
     position: relative;
 }
 
-.banner_slider .slick-dots {
+.banner_slider_nav-wr {
     position: absolute;
-    bottom: 75px;
+    bottom: 150px;
     width: 100%;
     box-sizing: border-box;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.banner_slider .slick-dots li {
+.banner-wrap_nav_prev {
+    order: 1;
+}
+
+.banner-wrap_nav_next {
+    order: 3;
+    transform: rotate(180deg);
+}
+
+.banner_slider_nav-wr .slick-dots {
+    order: 2;
+    padding-left: 0;
+    margin: 0 40px;
+}
+
+.banner_slider_nav-wr .slick-dots li {
     display: inline-block;
     margin-right: 15px;
 }
 
-.banner_slider .slick-dots li:last-of-type {
+.banner_slider_nav-wr .slick-dots li:last-of-type {
     margin-right: 0;
 }
 
-.banner_slider .slick-dots li button {
+.banner_wrap_nav  {
+    width: 55px;
+}
+
+.banner_slider_nav-wr .slick-dots li button {
     color: transparent;
     border: none;
     position: relative;
@@ -266,7 +294,7 @@ img {
     background-color: transparent;
 }
 
-.banner_slider .slick-dots li button::before {
+.banner_slider_nav-wr .slick-dots li button::before {
     position: absolute;
     content: "";
     background-image: url(../img/dots.svg);
@@ -278,23 +306,23 @@ img {
     transform: translateX(-50%) translateY(-50%);
 }
 
-.banner_slider .slick-dots li.slick-active button {
+.banner_slider_nav-wr .slick-dots li.slick-active button {
     transition: .2s;
     border: 1px solid #FFFFFF;
 }
 
-.banner_slider .slick-dots li.slick-active button::before {
+.banner_slider_nav-wr .slick-dots li.slick-active button::before {
     opacity: 1;
 }
 
-.banner_slider .slick-dots li.slick-active button::after {
+.banner_slider_nav-wr .slick-dots li.slick-active button::after {
     position: absolute;
     content: "";
     height: 28px;
     width: 1px;
     background-color: #FFFFFF;
     bottom: 100%;
-    left: calc(50%-1px);
+    left: calc(50% - 1px);
 }
 
 .page_subtitle {
@@ -310,6 +338,8 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
+    font-size: 16px;
+    line-height: 30px;
 }
 
 .main_repair {
@@ -317,7 +347,7 @@ img {
 }
 
 .main_repair_right {
-    max-width: 505px;
+    max-width: 555px;
 }
 
 .main_repair_subtitile {
@@ -398,7 +428,7 @@ img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #0B2349;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 64px;
     line-height: 1.2;
 }
@@ -582,6 +612,7 @@ img {
 .main_cost_form-wr form input[type="checkbox"] {
     z-index: 0;
     opacity: 0;
+    display: none;
 }
 
 .main_cost_form-wr form input[type="checkbox"]:checked+label::after {
@@ -661,6 +692,7 @@ img {
     display: flex;
     justify-content: space-between;
     padding: 35px 25px;
+    align-items: center;
 }
 
 .footer_logo {
@@ -669,7 +701,7 @@ img {
 
 .footer_address_mail {
     color: #EF5726;
-    margin-top: 15px;
+    margin-top: 8px;
     display: inline-block;
 }
 
@@ -761,6 +793,14 @@ img {
 
 .main-advantages_slider_arrow {
     cursor: pointer;
+    display: flex !important;
+    align-items: center;
+}
+
+
+.main_repair_left {
+    margin-bottom: 50px;
+    max-width: 505px;
 }
 
 
@@ -809,10 +849,16 @@ img {
 
     .repair_wrap {
         display: block;
+
     }
 
     .main_repair_left {
         margin-bottom: 50px;
+        max-width: 100%;
+    }
+
+    .main_repair_right {
+        max-width: 100%;
     }
 
     .main_repair_transfer {
@@ -862,5 +908,17 @@ img {
 
     .header_logo {
         margin-bottom: 25px;
+    }
+
+    .banner_wrap_nav {
+        display: none;
+    }
+
+    .page_subtitle {
+        font-size: 35px;
+    }
+
+    .page_subtitle {
+        font-size: 30px;
     }
 }
