@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Proxima';
+    src: url('../fonts/proxima_nova_black.eot');
+    src: url('../fonts/proxima_nova_black.eot') format('embedded-opentype'),
+        url('../fonts/proxima_nova_black.woff2') format('woff2'),
+        url('../fonts/proxima_nova_black.woff') format('woff'),
+        url('../fonts/proxima_nova_black.ttf') format('truetype');
+    font-weight: 900;
+    font-display: wrap;
+}
+
+@font-face {
+    font-family: 'Proxima';
+    src: url('../fonts/proxima_nova_condensed_black.eot');
+    src: url('../fonts/proxima_nova_condensed_black.eot') format('embedded-opentype'),
+        url('../fonts/proxima_nova_condensed_black.woff2') format('woff2'),
+        url('../fonts/proxima_nova_condensed_black.woff') format('woff'),
+        url('../fonts/proxima_nova_condensed_black.ttf') format('truetype');
+    font-weight: 800;
+    font-display: wrap;
+}
+
+@font-face {
+    font-family: 'Proxima';
+    src: url('../fonts/proxima_nova_regular.eot');
+    src: url('../fonts/proxima_nova_regular.eot') format('embedded-opentype'),
+        url('../fonts/proxima_nova_regular.woff2') format('woff2'),
+        url('../fonts/proxima_nova_regular.woff') format('woff'),
+        url('../fonts/proxima_nova_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-display: wrap;
+}
+
+@font-face {
+    font-family: 'Proxima';
+    src: url('../fonts/proxima_nova_light.eot');
+    src: url('../fonts/proxima_nova_light.eot') format('embedded-opentype'),
+        url('../fonts/proxima_nova_light.woff2') format('woff2'),
+        url('../fonts/proxima_nova_light.woff') format('woff'),
+        url('../fonts/proxima_nova_light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: wrap;
+}
+
+@font-face {
+    font-family: 'Proxima';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova-Bold.eot') format('embedded-opentype'),
+    url('../fonts/ProximaNova-Bold.woff') format('woff'),
+    url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-display: wrap;
+}
